@@ -1,4 +1,4 @@
-Bloc Base Project
+Chat Bloc
 =================
 
 A base for Bloc frontend projects.
