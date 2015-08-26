@@ -1,23 +1,25 @@
 <body ng-controller='roomController'>
-	<div>
-		<script type="text/ng-template" id="addRoom.html">
-        <div class="modal-header">
-            <h3 class="modal-title">Chat Room</h3>
-        </div>
-        <div class="modal-body">
-            <ul>
-                <li ng-repeat="room in rooms">
-                    <a href="#" ng-click="$event.preventDefault(); selected.room = room">{{ room }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ selected.room }}</b>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-        </div>
-    </script>
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Start A Chat Room
+</button>
 
-    <button type="button" class="btn btn-default" ng-click="open()">Create Chat Room</button>
-	</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create Chat Room</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
